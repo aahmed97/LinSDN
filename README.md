@@ -3,12 +3,12 @@
 
 Written in C, this project simulates a linear SDN where clients can communicate with one another using named pipes.
 The clients communicate with the server hosted on the local device using sockets. The sever handles query requests from up
-to 7 clients, directing packets to the correct destination and dropping those with an invalid destination IP address.
+to 7 clients, directing packets to the correct destination and dropping those with an invalid destination IP address. IO multiplexing 
+was used to continually poll the connections for new messages and poll any input from the command line.
 
 Specs that were used to design the project were provided by Ehab Elmallah at the University of Alberta.
 
-
-Included are two test files.
+Included are two test data files.
 
 NOTES:
 1) Runnable in a UNIX environment
